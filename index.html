@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>#TODO</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="text-container">
+            <h1>#todo</h1>
+        </div>
+
+    </header>
+
+    <nav>
+        <div class="container-toggle">
+            <div class="toggle" id="select"><a href="#" onclick="menuTabs(0)">All</a></div>
+            <div class="toggle"><a href="#" onclick="menuTabs(1)">Active</a></div>
+            <div class="toggle"><a href="#" onclick="menuTabs(2)">Completed</a></div>
+        </div>
+    </nav>
+
+    <div class="add-form-container">
+        <form action="" onsubmit="addTask()">
+            <input id="input" type="text" placeholder="add details">
+            <button type="button" id="submit" onclick="addTask()">Add</button>
+        </form>
+    </div>
+
+    <section class="all">
+
+        <div class="check-container">
+
+            <label class="container-label">
+                <input type="checkbox" onclick="addToCompletedTask(this)">
+                <span class="text">Do coding Challenge</span>
+            </label>
+
+        </div>
+
+    </section>
+
+    <section class="active">
+
+        <div class="check-container">
+
+            <label class="container-label">
+                <input type="checkbox" onclick="addToCompletedTask(this)">
+                <span class="text">Do coding Challenge</span>
+            </label>
+
+        </div>
+
+    </section>
+
+    <section class="completed">
+
+        <div class="check-container">
+            <div class="task-done">
+
+                <label class="container-label">
+                    <input type="checkbox" checked="checked">
+                    <span class="text line-through">Task Done</span>
+                </label>
+                <span class="material-symbols-outlined delete-icon" onclick="deleteTask(this)">delete</span>
+
+            </div>
+
+
+        </div>
+
+        <div class="btn-section">
+
+            <div class="btn-container">
+                <button onclick="deleteAllTask()"><span class="material-symbols-outlined" id="icon">delete</span>
+                    delete all
+                </button>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div class="link-container">
+            <a href="https://github.com/syousoso714" target="_blank" id="github"><i class="fa fa-github"></i></a>
+            <a href="#" target="_blank" id="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" target="_blank" id="instagram"><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

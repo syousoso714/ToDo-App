@@ -1,0 +1,304 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Raleway:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.text-container{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 45px 0;
+    position: relative;
+    left: -34px;
+}
+
+header h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: -0.045em;  
+    color: #333333; 
+}
+
+nav{
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom: 1px solid #cbcbcb;
+}
+
+section{
+    transition: ease 500ms;
+}
+
+.all{
+    display: block;
+}
+
+.active{
+    display: block;
+}
+
+.completed{
+    display: block;
+}
+
+.container-toggle{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-label{
+    display: flex;
+}
+
+.container-toggle .toggle{
+    margin: 0 25px;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.toggle a{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;   
+
+    padding: 4px 25px;
+    text-decoration: none;
+    color: #333333;
+
+}
+
+#select{
+    border-bottom: 2px solid #2F80ED;
+}
+
+.add-form-container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+form{
+    display: flex;
+    width: 100%;
+}
+
+form input{
+    padding: 13px 0;
+    width: 100%;
+    border: 1px solid #cbcbcb;
+    border-radius: 10px;
+    text-indent: 10px;
+    transition: 0.3s;
+}
+
+
+form button{
+    margin-left: 20px;
+    padding: 0 30px;
+    background: #2F80ED;
+    box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+    border-radius: 12px;
+    color: #FFF;    
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;    
+    transition: ease-in-out 200ms;
+}
+
+
+
+form button:hover{
+    background: #0064e6;
+}
+
+.check-container{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* color: #454545; */
+}
+
+.container-label{
+    display: flex;
+    margin: 15px 0 0 0;
+}
+
+.container-label .text{
+    margin-left: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #474747;   
+}
+
+
+label input{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.completed .container-label :nth-child(3){
+    margin-left: auto;
+    color: #a6a6a6;
+}
+
+
+.btn-section{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 0;
+}
+
+.btn-container button{
+    border: none;
+    padding: 10px 30px;
+    background: #EB5757;
+    border-radius: 4px;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;    
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.line-through{
+    text-decoration: line-through;
+    color: #454545;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+
+  cursor: pointer;
+}
+
+
+#icon{
+    font-size: 15px !important;
+}
+
+.task-done{
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete-icon{
+    position: relative;
+    top: 10px;
+    transition: ease 100ms;
+}
+
+.delete-icon:hover{
+    color: #EB5757;
+}
+
+button{
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.link-container{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+}
+
+footer a{
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#twitter{
+    color: #2F80ED;
+}
+
+#twitter:hover{
+    color: #2666bb;
+}
+
+#instagram{
+    color: #7a2dd2;
+}
+
+#instagram:hover{
+    color: #582196;
+}
+
+#github{
+    color: #333;
+}
+
+#github:hover{
+    color: rgb(21, 21, 21);
+}
+
+@media only screen and (max-width: 600px){
+
+    .text-container{
+        display: flex;
+        justify-content: center;
+        position: inherit;
+    }
+
+    nav, .add-form-container, section{
+        margin: 0 30px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 400px){
+
+    .container-toggle{
+        display: block;
+    }
+
+    
+}
